@@ -320,7 +320,7 @@ class _StatChip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
-          color: Colors.white08,
+          color: Colors.white.withOpacity(0.08),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(color: Colors.white12),
         ),
@@ -351,7 +351,7 @@ class _OrderCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF1A1A1A),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.white08),
+        border: Border.all(color: Colors.white.withOpacity(0.08)),
       ),
       child: Column(
         children: [
@@ -425,14 +425,14 @@ class _AddressCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: address.isPrimary ? primaryColor.withOpacity(0.08) : const Color(0xFF1A1A1A),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: address.isPrimary ? primaryColor.withOpacity(0.4) : Colors.white08),
+        border: Border.all(color: address.isPrimary ? primaryColor.withOpacity(0.4) : Colors.white.withOpacity(0.08)),
       ),
       child: Row(
         children: [
           Container(
             width: 44, height: 44,
             decoration: BoxDecoration(
-              color: address.isPrimary ? primaryColor.withOpacity(0.15) : Colors.white08,
+              color: address.isPrimary ? primaryColor.withOpacity(0.15) : Colors.white.withOpacity(0.08),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(address.icon, color: address.isPrimary ? primaryColor : Colors.white38, size: 20),
@@ -485,7 +485,7 @@ class _PaymentCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: isDefault ? primaryColor.withOpacity(0.08) : const Color(0xFF1A1A1A),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: isDefault ? primaryColor.withOpacity(0.4) : Colors.white08),
+        border: Border.all(color: isDefault ? primaryColor.withOpacity(0.4) : Colors.white.withOpacity(0.08)),
       ),
       child: Row(
         children: [
@@ -555,7 +555,7 @@ class _SettingsSection extends StatelessWidget {
         Text(title, style: GoogleFonts.poppins(color: Colors.white54, fontSize: 12, fontWeight: FontWeight.w600)),
         const SizedBox(height: 10),
         Container(
-          decoration: BoxDecoration(color: const Color(0xFF1A1A1A), borderRadius: BorderRadius.circular(20), border: Border.all(color: Colors.white08)),
+          decoration: BoxDecoration(color: const Color(0xFF1A1A1A), borderRadius: BorderRadius.circular(20), border: Border.all(color: Colors.white.withOpacity(0.08))),
           child: Column(children: children),
         ),
       ],
