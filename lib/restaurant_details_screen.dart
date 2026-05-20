@@ -185,7 +185,7 @@ class _RestaurantDetailsScreenState extends State<RestaurantDetailsScreen> with 
         rating: 4.5,
         calories: "210 kcal",
         category: "Sides",
-        imageUrl: "https://images.unsplash.com/photo-1639024471283-2bc7b3c6a267?auto=format&fit=crop&q=80&w=400",
+        imageUrl: "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?auto=format&fit=crop&q=80&w=400",
       ),
       const PopularDish(
         id: "d13",
